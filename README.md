@@ -12,7 +12,15 @@ plugins:
   - package: netlify-plugin-get-env-vars
 ```
 
-This plugin will not work unless you update the CLIENT_ID with a Netlify CLI client id in the `auth.js` file.
+For this plugin to work you will need to update the CLIENT_ID in the `auth.js` file. Here are the steps to get your client id from your netlify account:
+
+- Step 1: Go to user settings
+- Step 2: Under applications, create a new oauth app
+- Step 3: Name your oAuth app and add any other attributes like redirects etc
+- Step 4: If you click on your newly created oAuth app, you'll be able to easily grab your client id
+
+![Diagram for getting client id](./workflow-diagram.png "")
+
 
 At the moment, this plugin simply prints the env variables to console, the goal is to be able to pipe them to another build plugin.
 
