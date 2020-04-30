@@ -1,9 +1,8 @@
-module.exports = async function authenticate(client) {
-  const CLIENT_ID = CLIENT_ID_GOES_HERE
+module.exports = async function authenticate(client, clientId) {
   const webUI = process.env.NETLIFY_WEB_UI || 'https://app.netlify.com'
   
   const ticket = await client.createTicket({
-    clientId: CLIENT_ID
+    clientId
   })
   
   // Open browser for authentication

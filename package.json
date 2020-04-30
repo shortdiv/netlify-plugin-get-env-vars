@@ -2,15 +2,21 @@
   "name": "netlify-plugin-get-env-vars",
   "version": "1.0.0",
   "description": "A plugin to get env variables from Netlify",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/shortdiv/netlify-plugin-get-env-vars"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["netlify", "netlify-plugin"],
   "author": "Divya Tagtachian",
   "license": "MIT",
+  "bugs": {
+  },
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "cli-ux": "^5.4.5",
     "netlify": "^3.1.0"
   }
