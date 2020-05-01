@@ -23,7 +23,7 @@ Add this plugin to a project's toml file like so:
 
 ```toml
 [[plugins]]
-package = "./netlify-plugin-get-env-vars"
+package = "netlify-plugin-get-env-vars"
 ```
 
 For this plugin to work you will need to include a CLIENT_ID. This will be used for auth purposes and you will have to grant the application access to your application. The CLIENT_ID can either be read in from the plugins inputs or from env vars set in your shell. 
