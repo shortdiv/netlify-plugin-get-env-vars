@@ -13,7 +13,6 @@ function setEnvVars(key, val) {
 }
 
 module.exports = {
-  name: 'netlify-plugin-env-variables',
   onPreBuild: async({
     constants,
     inputs
